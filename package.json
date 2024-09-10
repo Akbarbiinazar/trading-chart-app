@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "lightweight-charts": "^4.2.0",
     "path": "^0.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
+    "telegraf": "^4.16.3",
+    "telegraph": "^0.8.22",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-eslint": "^1.8.1"
   },
@@ -29,6 +32,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "link:@types/unplugin-fonts/vite",

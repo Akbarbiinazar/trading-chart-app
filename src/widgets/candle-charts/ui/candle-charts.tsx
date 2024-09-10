@@ -100,7 +100,7 @@ export const CandleCharts = () => {
   }, [isTapped, generateRandomCandle]);
 
   const handleTap = () => setIsTapped((prev: boolean) => !prev);
-
+  console.log(import.meta.env.VITE_TELEGRAM_BOT_TOKEN);
   return (
     <div
       ref={chartContainerRef}
