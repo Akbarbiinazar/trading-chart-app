@@ -82,7 +82,7 @@ export const CandleCharts = () => {
     };
   }, []);
 
-  // Add new candle every 5 seconds
+  // Add new candle every n seconds
   useEffect(() => {
     if (!seriesRef.current) return;
 
@@ -94,13 +94,13 @@ export const CandleCharts = () => {
         seriesRef.current?.update(newCandle);
         return [...prevCandles, newCandle];
       });
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(intervalId);
   }, [isTapped, generateRandomCandle]);
 
   const handleTap = () => setIsTapped((prev: boolean) => !prev);
-  console.log(import.meta.env.VITE_TELEGRAM_BOT_TOKEN);
+
   return (
     <div
       ref={chartContainerRef}
